@@ -1,0 +1,190 @@
+GameCube: 1
+Programs: 2
+Third-Party: 3
+VC-Arcade: 4
+VC-Commodore 64: 5
+VC-MSX: 6
+VC-N64: 7
+VC-NeoGeo: 8
+VC-NES: 9
+VC-Sega Genesis: 10
+VC-SEGA Master System: 11
+VC-SNES: 12
+VC-Turbo Grafx 1.6: 13
+Wii: 14
+WiiWare: 15
+software: 16
+运动: 17
+冒险: 18
+动作: 19
+解谜: 20
+恐怖游戏: 21
+音乐: 22
+跳舞: 23
+节奏: 24
+跳台游戏: 25
+聚会: 26
+探险: 27
+平衡板: 28
+篮球: 29
+赛车: 30
+足球: 31
+街机: 32
+网球: 33
+射击: 34
+第一人称射击: 35
+模拟: 36
+角色扮演: 37
+桌面游戏: 38
+钓鱼: 39
+动作 RPG: 40
+虚拟宠物: 41
+拳击: 42
+卡丁车 赛车: 43
+高尔夫: 44
+冰球: 45
+滑雪橇: 46
+标枪: 47
+搏斗: 48
+对战: 49
+轨道射击: 50
+战术 RPG: 51
+交互故事: 52
+弹球游戏: 53
+台球: 54
+智力测验: 55
+第一人称 射击: 56
+教育: 57
+打猎: 58
+模拟人生: 59
+健康: 60
+减肥: 61
+健身教练: 62
+运动练习: 63
+越野车赛: 64
+施工模拟: 65
+策略: 66
+智力解谜: 67
+卡拉OK: 68
+隐藏 游戏: 69
+板球: 70
+滑雪板: 71
+保龄球: 72
+第三人称射击: 73
+基础 战略游戏: 74
+烹饪: 75
+卡牌: 76
+滚球: 77
+商业 模拟: 78
+排球运动: 79
+即时战略: 80
+飞行模拟: 81
+轨道 射击: 82
+枪战暴力: 83
+策略 rpg: 84
+滑板: 85
+sports: 86
+adventure: 87
+demo: 88
+action: 89
+puzzle: 90
+horror: 91
+survival horror: 92
+music: 93
+dance: 94
+rhythm: 95
+platformer: 96
+health: 97
+coaching: 98
+exercise: 99
+fitness: 100
+party: 101
+role-playing: 102
+baseball: 103
+racing: 104
+kart racing: 105
+point-and-click: 106
+soccer: 107
+football: 108
+arcade: 109
+compilation: 110
+tennis: 111
+shooter: 112
+first-person shooter: 113
+simulation: 114
+board game: 115
+fishing: 116
+action rpg: 117
+virtual pet: 118
+boxing: 119
+golf: 120
+hockey: 121
+ski: 122
+darts: 123
+fighting: 124
+rail shooter: 125
+tactical rpg: 126
+interactive fiction: 127
+pinball: 128
+billiards: 129
+trivia: 130
+educational: 131
+hunting: 132
+life simulation: 133
+off-road racing: 134
+2d platformer: 135
+construction simulation: 136
+strategy: 137
+karaoke: 138
+hidden object: 139
+3d platformer: 140
+cricket: 141
+snowboarding: 142
+bowling: 143
+third-person shooter: 144
+basketball: 145
+turn-based strategy: 146
+cooking: 147
+cards: 148
+pétanque: 149
+management simulation: 150
+business simulation: 151
+volleyball: 152
+real-time strategy: 153
+flight simulation: 154
+table tennis: 155
+beat 'em up: 156
+shoot 'em up: 157
+3d fighting: 158
+truck racing: 159
+chess: 160
+strategy rpg: 161
+roguelike: 162
+2d fighting: 163
+poker: 164
+skateboarding: 165
+watercraft racing: 166
+historic: 167
+motorcycle racing: 168
+run and gun: 169
+martial arts: 170
+wrestling: 171
+futuristic racing: 172
+stealth action: 173
+sim racing: 174
+bike racing: 175
+surfing: 176
+drawing: 177
+mmorpg: 178
+modern day: 179
+interactive movie: 180
+multimedia: 181
+fantasy: 182
+sci-fi: 183
+rugby: 184
+train simulation: 185
+emulator: 186
+traditional: 187
+wargame: 188
+tower defense: 189
+sampler: 190
