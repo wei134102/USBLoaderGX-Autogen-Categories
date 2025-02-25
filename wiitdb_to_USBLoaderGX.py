@@ -5,6 +5,7 @@ from untangle import parse as up
 from googletrans import Translator
 from httpcore._exceptions import ConnectTimeout, ConnectError
 from ssl import SSLEOFError
+import xml.etree.ElementTree as ET
 
 # 游戏类型映射到对应的ID
 gameTypeMap = {
@@ -221,10 +222,74 @@ with open('gameTypeMap.txt', 'w', encoding='utf-8') as f:
 # 读取生成的GXGameCategories.xml文件并检索英文标题
 tree = xmlt.parse('GXGameCategories.xml')
 root = tree.getroot()
-
+# 读取生成的GXGameCategories.xml文件并检索英文标题,并且存入英文标题和ID的文件到GXGameCategories-new.txt
 with open('GXGameCategories-new.txt', 'w', encoding='utf-8') as f:
     for game in root.findall('.//Game'):
         title = game.get('Title')
         if title and title.isascii():  # 检查标题是否为英文
             game_id = game.get('ID')
             f.write(f'ID={game_id} Title={title}\n')
+
+# 解析 wiitdb.xml 文件并处理解析错误
+try:
+    wiitdb_xml = up('wiitdb.xml')
+except ET.ParseError as e:
+    print(f"Error parsing wiitdb.xml: {e}")
+    exit(1)
+
+# 检索 wiitdb.xml 中 game中input中control 的 type='balanceboard' 的游戏（排除game.type=Homebrew的游戏  ），把符合 game 的id 和 name(输出lang="ZHCN",如果没有则输出lang="EN") 输出到 balanceboard.txt
+with open('balanceboard.txt', 'w', encoding='utf-8') as f:
+    for game in wiitdb_xml.datafile.game:
+        # 排除game.type=Homebrew和game.type=Channel的游戏
+        if game.type.cdata != 'Homebrew' and game.type.cdata != 'Channel': 
+            for input in game.input:
+                if hasattr(input, 'control'):
+                    for control in input.control:
+                        if control['type'] == 'balanceboard':
+                            id = game.id.cdata
+                            name = None
+                            # 检索中文标题功能注释掉
+                            # for locale in game.locale:
+                            #     if locale['lang'] == 'ZHCN':
+                            #         name = locale.title.cdata
+                            #         break
+                            if hasattr(game, 'locale'):
+                                for locale in game.locale:
+                                    if locale['lang'] == 'EN':
+                                        name = locale.title.cdata
+                                        break
+                            if name:
+                                f.write(f'ID={id} Name={name}\n')
+                            else:
+                                if game.locale and hasattr(game.locale[0], 'title'):
+                                    f.write(f'ID={id} Name={game.locale[0].title.cdata}\n')
+                                else:
+                                    f.write(f'ID={id} Name=Unknown\n')
+# 检索 wiitdb.xml 中 game中input中control 的 type='dancepad' 的游戏（排除game.type=Homebrew的游戏  ），把符合 game 的id 和 name(输出lang="ZHCN",如果没有则输出lang="EN") 输出到 dancepad.txt
+with open('dancepad.txt', 'w', encoding='utf-8') as f:
+    for game in wiitdb_xml.datafile.game:
+        # 排除game.type=Homebrew和game.type=Channel的游戏
+        if game.type.cdata != 'Homebrew' and game.type.cdata != 'Channel': 
+            for input in game.input:
+                if hasattr(input, 'control'):
+                    for control in input.control:
+                        if control['type'] == 'dancepad':
+                            id = game.id.cdata
+                            name = None
+                            # 检索中文标题功能注释掉
+                            # for locale in game.locale:
+                            #     if locale['lang'] == 'ZHCN':
+                            #         name = locale.title.cdata
+                            #         break
+                            if hasattr(game, 'locale'):
+                                for locale in game.locale:
+                                    if locale['lang'] == 'EN':
+                                        name = locale.title.cdata
+                                        break
+                            if name:
+                                f.write(f'ID={id} Name={name}\n')
+                            else:
+                                if game.locale and hasattr(game.locale[0], 'title'):
+                                    f.write(f'ID={id} Name={game.locale[0].title.cdata}\n')
+                                else:
+                                    f.write(f'ID={id} Name=Unknown\n')                                   

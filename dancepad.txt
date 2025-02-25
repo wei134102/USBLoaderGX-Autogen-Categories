@@ -1,0 +1,39 @@
+ID=R9QPNG Name=Dance Party Club Hits
+ID=R9RPNG Name=Dance Party Pop Hits
+ID=RD4EA4 Name=Dance Dance Revolution: Hottest Party 2
+ID=RD4JA4 Name=Dance Dance Revolution: Furu Furu Party
+ID=RD4PA4 Name=Dance Dance Revolution: Hottest Party 2
+ID=RDDEA4 Name=Dance Dance Revolution: Hottest Party
+ID=RDDJA4 Name=Dance Dance Revolution: Hottest Party
+ID=RDNEA4 Name=Dance Dance Revolution: Disney Grooves
+ID=REJEAF Name=Active Life: Extreme Challenge
+ID=REJPAF Name=Family Trainer: Extreme Challenge
+ID=RFAEAF Name=Active Life: Outdoor Challenge
+ID=RFAPAF Name=Family Trainer
+ID=RJREA4 Name=Dance Dance Revolution: Hottest Party 3
+ID=RJRJA4 Name=Dance Dance Revolution: MUSIC FIT
+ID=RJRPA4 Name=Dance Dance Revolution: Hottest Party 3
+ID=RR3EA4 Name=Ultimate Party Challenge
+ID=RR3JA4 Name=Family Challenge Wii
+ID=RR3PA4 Name=Let's Party!
+ID=RW6PA4 Name=Dance Dance Revolution: Winx Club
+ID=RXSPA4 Name=Dancing Stage: Hottest Party
+ID=RY6EA4 Name=Walk It Out!
+ID=RY6PA4 Name=Step to the Beat
+ID=S2AEAF Name=Active Life: Explorer
+ID=S2APAF Name=Family Trainer: Treasure Adventure
+ID=SDSPNG Name=We Dance
+ID=SDYEA4 Name=Dance Dance Revolution
+ID=SDYPA4 Name=Dance Dance Revolution: Hottest Party 4
+ID=SFDEAF Name=Active Life: Magical Carnival
+ID=SFDJAF Name=Issho ni Asobu! Dream Theme Park
+ID=SFDPAF Name=Family Trainer: Magical Carnival
+ID=SUREA4 Name=Dance Dance Revolution II
+ID=SURPA4 Name=Dance Dance Revolution: Hottest Party 5
+ID=SL1E41 Name=Just Dance Starlight
+ID=GK9EA4 Name=Karaoke Revolution Party
+ID=GR4EMZ Name=MC Groovz Dance Craze
+ID=GR4PMZ Name=MC Groovz Dance Craze
+ID=GWZE01 Name=Dance Dance Revolution: Mario Mix
+ID=GWZJ01 Name=Dance Dance Revolution: Mario Mix
+ID=GWZP01 Name=Dancing Stage: Mario Mix
